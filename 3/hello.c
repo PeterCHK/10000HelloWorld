@@ -4,6 +4,9 @@ int main()
 {
     int ascii_codes[] = {72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100};
     int length = sizeof(ascii_codes) / sizeof(ascii_codes[0]);
+    printf("%lu\n", sizeof(ascii_codes));
+    printf("%lu\n",sizeof(ascii_codes[0]));
+    printf("%i\n",length);
 
     char hello_world[length + 1];
     for (int i = 0; i < length; i++)
